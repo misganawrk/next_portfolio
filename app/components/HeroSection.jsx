@@ -32,21 +32,29 @@ const HeroSection = () => {
               />{" "}
             </span>
           </h1>
-          <p className=" mb-6 mx-2 text-base text-transparent bg-clip-text  bg-gradient-to-r  from-cyan-300 via-purple-300 to-pink-300 sm:text-lg lg:text-xl ">
+          {/* <p className=" mb-6 mx-2 text-base text-transparent bg-clip-text  bg-gradient-to-r  from-cyan-300 via-purple-300 to-pink-300 sm:text-lg lg:text-xl ">
             {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-            pariatur. Blanditiis quos ut{" "}
-          </p>
+            My passion lies in turning ideas into reality and pushing the
+            boundaries of what’s possible. Here, you’ll find a collection of my
+            work that showcases my skills, experiences, and the value I bring.
+            Feel free to explore and reach out if you’d like to connect or
+            collaborate.{" "}
+          </p> */}
           <div>
             <button className="w-fit text-black bg-gradient-to-br from-blue-700 via-purple-700 to-red-700  hover:from-pink-700 hover:via-purple-700 hover:to-cyan-700 hover:text-white hover:font-extrabold  px-6 py-3 rounded-full mr-4">
               {" "}
               Hire me
             </button>
-
-            <button className=" w-fit bg-transparent hover:bg-green-200 mt-4 hover:text-black  hover:font-bold border border-white text-yellow-50 px-6 py-3 rounded-full mr-4">
-              {" "}
-              Download CV
-            </button>
+            <a
+              href="https://drive.google.com/file/d/1GpyKJIxXwTeop7EYtCQyc7v1-Brcoldm/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="w-fit bg-transparent hover:bg-green-200 mt-4 hover:text-black hover:font-bold border border-white text-yellow-50 px-6 py-3 rounded-full mr-4">
+                {" "}
+                Download CV{" "}
+              </button>
+            </a>
           </div>
         </div>
 

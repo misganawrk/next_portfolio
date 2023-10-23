@@ -11,12 +11,20 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Nextjs</li>
+        <li>Bootstrap</li>
+        <li>Tailwind</li>
+        <li>MongoDB</li>
+        <li>SQL</li>
+        <li>Linux OS</li>
+        <li>Network Adminstration</li>
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
       </ul>
     ),
   },
@@ -25,21 +33,20 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Jimma University</li>
       </ul>
     ),
   },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Certifications",
+  //   id: "certifications",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>AWS Cloud Practitioner</li>
+  //       <li>Google Professional Cloud Developer</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 
 const AboutSection = () => {
@@ -52,12 +59,12 @@ const AboutSection = () => {
     });
   };
   return (
-    <section className="text-white">
-      <div className="md:grid md:grid-cols-2  gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
+    <section className="text-white" id="about">
+      <div className="md:grid md:grid-cols-2  justify-center  gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
         <Image
           src="/images/PC.png"
           alt="about image"
-          className="rounded-3xl ml-12 md:ml-0 "
+          className="rounded-3xl mx-12  md:ml-0 justify-center  "
           width={300}
           height={300}
         />
@@ -69,32 +76,32 @@ const AboutSection = () => {
           </span>
 
           <p className="text-base lg:text-lg text-transparent bg-clip-text  bg-gradient-to-r  from-cyan-300 via-purple-300 to-pink-300 ">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
-            architecto earum, ad voluptatibus rep udiandae ab repellat
-            exercitationem! Autem, unde doloribus? Aliquid repellendus unde
-            quidem, rerum itaque minima? Aperiam, nam ab. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Vero officia error temporibus
-            repellat perspiciatis dignissimos quas, esse labore commodi tempora.
+            Welcome! I’m Misgana Alewegziabher, a professional dedicated to
+            transforming ideas into reality. This portfolio is a testament to my
+            journey, showcasing my skills and the unique value I bring. Each
+            project here represents an opportunity for learning and growth,
+            pushing boundaries to make a positive impact. Feel free to explore
+            and reach out for collaboration.
           </p>
-          <div className=" flex flex-row  justify-start mt-8 ">
+          <div className=" font-semibold  flex flex-row  justify-center mt-8 ">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              skills
+              Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              education
+              Education
             </TabButton>{" "}
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              certification
-            </TabButton>
+              Certification
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
