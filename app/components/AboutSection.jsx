@@ -55,12 +55,13 @@ const AboutSection = () => {
     <section className="text-white">
       <div className="md:grid md:grid-cols-2  gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
         <Image
-          src="/images/pc.png"
+          src="/images/PC.png"
           alt="about image"
           className="rounded-3xl ml-12 md:ml-0 "
           width={300}
           height={300}
         />
+
         <div className="mt-6 md:mt-0 text-left  flex flex-col h-full">
           <span className=" mb-3 text-center text-4xl sm:text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r  from-blue-700 via-purple-700 to-red-700 transition-all duration-500 ease-in-out hover:from-pink-700 hover:via-purple-700 hover:to-cyan-700 ">
             {"About me "}
