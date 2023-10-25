@@ -3,28 +3,75 @@
 import React, { useTransition, useState } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 import TabButton from "./TabButton";
+import BootstrapIcon from "../../public/icons8-bootstrap.svg";
+import CssIcon from "../../public/icons8-css.svg";
+import ExpressIcon from "../../public/icons8-express-js-50.png";
+import HtmlIcon from "../../public/icons8-html.svg";
+import JavascriptIcon from "../../public/icons8-javascript-50.png";
+import LinuxIcon from "../../public/icons8-linux-50.png";
+import MongoIcon from "../../public/icons8-mongodb-50.png";
+import NetworkIcon from "../../public/icons8-network-50.png";
+import NextIcon from "../../public/icons8-nextjs.svg";
+import NodejsIcon from "../../public/icons8-nodejs-50.png";
+import ReactIcon from "../../public/icons8-react-native-50.png";
+import SqlIcon from "../../public/icons8-sql-50.png";
+import TailwindIcon from "../../public/icons8-tailwindcss-50.png";
+import TypescriptIcon from "../../public/icons8-typescript-50.png";
+import JimmaIcon from "../../public/jimma.png";
+
+
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Nextjs</li>
-        <li>Bootstrap</li>
-        <li>Tailwind</li>
-        <li>MongoDB</li>
-        <li>SQL</li>
-        <li>Linux OS</li>
-        <li>Network Adminstration</li>
-        <li>Node.js</li>
-        <li>Express</li>
+      
+      <ul className="grid grid-cols-4 gap-4">
+              <Link href="#logo">
+            <Image src={HtmlIcon} alt="Html Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={CssIcon} alt="Css Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={JavascriptIcon} alt="Javascript Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={TypescriptIcon} alt="Typescript Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={ReactIcon} alt="React Icon" />
+          </Link> 
+            <Link href="#logo">
+            <Image src={NextIcon} alt="Next Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={BootstrapIcon} alt="Bootstrap Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={TailwindIcon} alt="Tailwind Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={MongoIcon} alt="Mongo Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={SqlIcon} alt="SQL Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={LinuxIcon} alt="Linux Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={NetworkIcon} alt="Network Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={NodejsIcon} alt="Nodejs Icon" />
+          </Link>
+          <Link href="#logo">
+            <Image src={ExpressIcon} alt="Express Icon" />
+          </Link>
       </ul>
     ),
   },
@@ -32,21 +79,12 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Jimma University</li>
-      </ul>
+      <Link href="#logo" className="flex flex-row justify-center">
+      <Image src={JimmaIcon} alt="jimma  Icon" />
+    </Link>
     ),
   },
-  // {
-  //   title: "Certifications",
-  //   id: "certifications",
-  //   content: (
-  //     <ul className="list-disc pl-2">
-  //       <li>AWS Cloud Practitioner</li>
-  //       <li>Google Professional Cloud Developer</li>
-  //     </ul>
-  //   ),
-  // },
+ 
 ];
 
 const AboutSection = () => {
@@ -75,7 +113,7 @@ const AboutSection = () => {
             &nbsp; <br />
           </span>
 
-          <p className="text-base lg:text-lg text-transparent bg-clip-text  bg-gradient-to-r  from-cyan-300 via-purple-300 to-pink-300 ">
+          <p id="logo"   className="text-base lg:text-lg text-transparent bg-clip-text  bg-gradient-to-r  from-cyan-300 via-purple-300 to-pink-300 ">
             Welcome! I’m Misgana Alewegziabher, a professional dedicated to
             transforming ideas into reality. This portfolio is a testament to my
             journey, showcasing my skills and the unique value I bring. Each
